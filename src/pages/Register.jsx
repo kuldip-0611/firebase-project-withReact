@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 
 import {useFirebase} from '../context/Firebase';
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 
@@ -48,9 +48,13 @@ const Register = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={handleSubmit}>
+        <Button variant="primary" type="submit" onClick={handleSubmit} >
          Create Account
         </Button>
+        <br />
+        <div className="mt-3 d-flex justify-content-center align-items-center">
+        <NavLink to='/login' >Already have an account ? then please login</NavLink>
+        </div>
       </Form>
     </div>
   );

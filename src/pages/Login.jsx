@@ -59,7 +59,7 @@ const Login = () => {
         </Button>
       </Form>
       <h1 className='m-5'>or</h1>
-      <Button variant='danger' onClick={handleGoogeClick}>sign in with Google</Button>
+      <Button variant='danger'  onClick={handleGoogeClick}>sign in with Google</Button>
     </div>
       
     </div>
